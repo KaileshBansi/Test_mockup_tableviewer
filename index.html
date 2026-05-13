@@ -1,354 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dataset Detail</title>
-
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hematological malignancies – Health-RI Data Catalogue</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-<!-- TOP NAV -->
-<header class="topbar">
 
-  <div class="topbar-left">
-    <div class="brand">
-      <span class="dot"></span>
-      health RI Data Catalogue
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <nav class="topbar-nav">
+        <a href="#" class="topbar-link">
+          <span class="topbar-icon">⬡</span> Health-RI
+        </a>
+        <span class="topbar-sep">|</span>
+        <a href="#" class="topbar-link">
+          <span class="topbar-icon">⊞</span> Portal
+        </a>
+        <span class="topbar-sep">|</span>
+        <a href="#" class="topbar-link topbar-link--active">
+          <span class="topbar-icon">🗄</span> Data Catalogue
+        </a>
+      </nav>
+      <div class="topbar-right">
+        <a href="#" class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          Health-RI Servicedesk
+        </a>
+        <span class="topbar-sep">|</span>
+        <a href="#" class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+          EN <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 
-  <nav class="topnav">
-    <a href="#">Data Catalogue</a>
-    <a href="#">About the Catalogue</a>
-    <a href="#">Frequently asked questions</a>
-  </nav>
-
-  <div class="topbar-right">
-    <button class="basket">Dataset basket</button>
-  </div>
-
-</header>
-
-<!-- HERO -->
-<div class="hero">
-
-  <div class="breadcrumb">Home</div>
-
-  <h1>Hematological malignancies</h1>
-
-  <div class="hero-actions">
-
-    <button class="primary">Request dataset</button>
-
-    <button>Add to dataset basket</button>
-
-    <button>View my dataset basket</button>
-
-  </div>
-
-</div>
-
-<div class="container">
-
-  <!-- TITLE -->
-  <div class="breadcrumb">Home</div>
-  <h1 class="title">Hematological malignancies</h1>
-
-  <!-- GRID -->
-  <div class="grid">
-
-    <!-- LEFT COLUMN -->
-    <div class="left">
-
-
-       <!-- KEYWORDS -->
-      <section class="card">
-        <h2>Description</h2>
-
-        <div class="tags">
-          <span class="tag">The data from the hemato-oncology registry of the Netherlands Cancer Registry (NKR) are used to provide insight into the incidence and survival (cancer epidemiology), diagnostic strategies, primary treatment, and the coherence of policy (i.e., the extent to which guidelines are followed) as well as the impact of treatment recommendations for various hematological cancer types.</span>
+  <!-- MAIN HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
         </div>
+        <div class="logo-text-wrap">
+          <span class="logo-health">health <strong>RI</strong></span>
+          <span class="logo-catalogue">Data Catalogue</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#" class="nav-link">Data Catalogue</a>
+        <a href="#" class="nav-link">About the Catalogue <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="#" class="nav-link">Frequently asked questions <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </nav>
+
+      <div class="header-right">
+        <a href="#" class="basket-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Dataset basket
+          <span class="basket-count">1</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <a href="#">Home</a>
+    </div>
+  </div>
+
+  <!-- PAGE TITLE AREA -->
+  <div class="page-title-area">
+    <div class="container">
+      <h1 class="page-title">Hematological malignancies</h1>
+      <div class="title-dots" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="action-buttons">
+        <a href="#" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Request dataset
+        </a>
+        <a href="#" class="btn btn-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Add to dataset basket
+        </a>
+        <a href="#" class="btn btn-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          View my dataset basket
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container content-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+
+        <!-- Publisher -->
+        <section class="pub-section">
+          <h2 class="field-heading">Publisher</h2>
+          <p class="field-line"><span class="field-key">Name:</span> <a href="#">IKNL: the Netherlands Comprehensive Cancer Organisation</a></p>
+          <p class="field-line"><span class="field-key">E-mail:</span> <a href="mailto:info@iknl.nl">info@iknl.nl</a></p>
         </section>
- 
-      <!-- KEYWORDS -->
-      <section class="card">
-        <h2>Keywords</h2>
 
-        <div class="tags">
-          <span class="tag">B-cell lymphoma</span>
-          <span class="tag">Follicular lymphoma</span>
-          <span class="tag">Haemato oncology</span>
-          <span class="tag">Leukemia</span>
-          <span class="tag">Multiple myeloma</span>
-          <span class="tag">Myelodysplastic syndromes</span>
-          <span class="tag">Plasma cell tumors</span>
+        <!-- Description -->
+        <section class="desc-section">
+          <h2 class="section-heading">Description</h2>
+          <p>The data from the hemato-oncology registry of the Netherlands Cancer Registry (NKR) are used to provide insight into the incidence and survival (cancer epidemiology), diagnostic strategies, primary treatment, and the coherence of policy (i.e., the extent to which guidelines are followed) as well as the impact of treatment recommendations for various hematological cancer types.</p>
+        </section>
+
+        <!-- Metadata fields -->
+        <table class="meta-table">
+          <tbody>
+
+            <tr>
+              <th>Health theme</th>
+              <td><a href="#">https://www.wikidata.org/wiki/Q162555</a></td>
+            </tr>
+
+            <tr>
+              <th>Is referenced by</th>
+              <td><a href="#">https://iknl.nl/getmedia/b28517e6-2145-4bad-97a1-3415e8903cd3/hemato_oncologischezorg-in-NL_digitaal.pdf</a></td>
+            </tr>
+
+            <tr>
+              <th>Keywords</th>
+              <td>
+                <div class="keyword-list">
+                  <span class="kw">B-cell lymphoma</span>
+                  <span class="kw">Follicular lymphoma</span>
+                  <span class="kw">Haemato oncology</span>
+                  <span class="kw">Leukemia</span>
+                  <span class="kw">Lymph node cancer</span>
+                  <span class="kw">Multiple myeloma</span>
+                  <span class="kw">Myelodysplastic syndromes</span>
+                  <span class="kw">Myeloproliferative disorders</span>
+                  <span class="kw">Plasma cell tumors</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Population coverage</th>
+              <td>Adults aged 18–100 diagnosed with haematological cancer in the Netherlands since 1989</td>
+            </tr>
+
+            <tr>
+              <th>Geographical coverage</th>
+              <td><a href="#">Netherlands</a></td>
+            </tr>
+
+            <tr>
+              <th>Temporal coverage</th>
+              <td>
+                Start: &nbsp; January 1, 1989<br>
+                End:
+              </td>
+            </tr>
+
+            <tr>
+              <th>Purpose</th>
+              <td>
+                <a href="#" class="meta-link">Legal Compliance</a><br>
+                <a href="#" class="meta-link">Provide Official Statistics</a><br>
+                <a href="#" class="meta-link">Research and Development</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Personal data</th>
+              <td>
+                <a href="#" class="meta-link">Demographic</a><br>
+                <a href="#" class="meta-link">Gender</a><br>
+                <a href="#" class="meta-link">Health History</a><br>
+                <a href="#" class="meta-link">Health Record</a><br>
+                <a href="#" class="meta-link">Income Bracket</a><br>
+                <a href="#" class="meta-link">Region</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Coding system</th>
+              <td>
+                <a href="#" class="meta-link">International Classification of Diseases for Oncology</a><br>
+                <a href="#" class="meta-link">https://www.wikidata.org/wiki/Q192093</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Code values</th>
+              <td><a href="#">http://id.who.int/icd/entity/944754984</a></td>
+            </tr>
+            <tr>
+              <th>Variables</th>
+              <td>
+
+                <div class="variables-block">
+
+                  <!-- Tabs -->
+                  <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'tab_all')">Alle hematologische maligniteit</button>
+<button class="tab-button" onclick="openTab(event, 'tab_nhl')">NHL</button>
+<button class="tab-button" onclick="openTab(event, 'tab_hl')">HL</button>
+<button class="tab-button" onclick="openTab(event, 'tab_cutane')">Cutane lymfomen</button>
+<button class="tab-button" onclick="openTab(event, 'tab_plasma')">Plasmaceltumoren</button>
+<button class="tab-button" onclick="openTab(event, 'tab_al')">AL amyloidose</button>
+<button class="tab-button" onclick="openTab(event, 'tab_histio')">Histiocytaire en dendritische c</button>
+                  </div>
+
+                  <!-- TAB: ALLE -->
+                  <div id="tab_all" class="tab-content active">
+                    <table class="inner-table">
+                      <thead>
+                        <tr>
+                          <th>Language code</th>
+                          <th>Name</th>
+                          <th>Description</th>
+                          <th>Type</th>
+                          <th>URI</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+                        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+                        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum diagnose</td><td>date</td><td></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+            <!-- TAB: NHL -->
+<div id="tab_nhl" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- basisset -->
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld</td><td>date</td><td></td></tr>
+
+      <!-- NHL specifiek -->
+      <tr><td>NL</td><td>Ann Arbor stadium</td><td>Stadium I–IV</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Aantal extranodale locaties</td><td>Aantal extranodale tumorlokalisaties</td><td>integer</td><td></td></tr>
+      <tr><td>NL</td><td>DNA-onderzoek tumormarkers</td><td>Indicatie of DNA-onderzoek is uitgevoerd</td><td>boolean</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: HL -->
+<div id="tab_hl" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Morfologie</td><td>Histologisch type</td><td>string</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: Cutane lymfomen -->
+<div id="tab_cutane" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum diagnose</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Topografie</td><td>Huidlocatie van de maligniteit</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Morfologie</td><td>Subtype cutaan lymfoom</td><td>string</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: Plasmaceltumoren -->
+<div id="tab_plasma" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum diagnose</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>M-proteïne</td><td>Aanwezigheid van M-proteïne</td><td>boolean</td><td></td></tr>
+      <tr><td>NL</td><td>Beenmergpercentage plasmacellen</td><td>Percentage plasmacellen in beenmerg</td><td>integer</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: AL amyloidose -->
+<div id="tab_al" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum diagnose</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Orgaanbetrokkenheid</td><td>Betrokken organen bij amyloidose</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Lichte ketens type</td><td>Type lichte ketens (kappa/lambda)</td><td>string</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: Histiocytaire en dendritische -->
+<div id="tab_histio" class="tab-content">
+  <table class="inner-table">
+    <thead>
+      <tr>
+        <th>Language code</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Diagnosedatum</td><td>Datum diagnose</td><td>date</td><td></td></tr>
+      <tr><td>NL</td><td>Subtype histiocytaire tumor</td><td>Specifiek subtype</td><td>string</td><td></td></tr>
+      <tr><td>NL</td><td>Immunofenotype</td><td>Immunologische karakteristieken</td><td>string</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+          </tbody>
+        </table>
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Identifier</h3>
+            <a href="#" class="sidebar-link-break">http://www.fdp-acc.healthdata.nl/catalog/2d7ab6b8-7edf-4c6a-8227-129d8c877867</a>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Access rights</h3>
+            <span class="access-restricted">Restricted</span>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Legal basis for publishing</h3>
+            <a href="#" class="sidebar-link-break">Regulation (EU) 2025/327 of the European Parliament and of the Council of 11 February 2025 on the European Health Data Space and amending Directive 2011/24/EU and Regulation (EU) 2024/2847 (Text with EEA relevance)</a>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Contact details</h3>
+            <span class="contact-tag">IKNL: the Netherlands Comprehensive Cancer Organisation</span>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Documentation</h3>
+            <a href="#" class="sidebar-link-break">https://iknl.nl/getmedia/b7276fdb-be51-4f1d-aa3a-e20311af8c4f/RANK-Bestandsindeling-tumorsoort-2025.pdf</a><br>
+            <a href="#" class="sidebar-link-break">https://iknl.nl/getmedia/ce4ead48-ba30-4b10-8df8-955e4c6f1c18/NKR_Itemset_Hemato-oncologie_ALL_april2022_IKNL.pdf</a>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Creator</h3>
+            <p class="sidebar-meta-line"><span>Name:</span> <a href="#">IKNL: the Netherlands Comprehensive Cancer Organisation</a></p>
+            <p class="sidebar-meta-line"><span>E-mail:</span> <a href="mailto:info@iknl.nl">info@iknl.nl</a></p>
+            <p class="sidebar-meta-line"><span>Type:</span> <a href="#">https://ror.org/03g5hcd33</a></p>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Other responsible organisation(s)</h3>
+            <p class="sidebar-meta-line"><span>E-mail:</span> <a href="mailto:info@iknl.nl">info@iknl.nl</a></p>
+            <p class="sidebar-meta-line"><span>Identifier:</span> <a href="#">https://ror.org/03g5hcd33</a></p>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Dataset languages</h3>
+            <p>English</p>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Publication date</h3>
+            <p>January 1, 1989</p>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Update frequency</h3>
+            <a href="#">Daily</a>
+          </div>
+
+          <div class="sidebar-field">
+            <h3 class="sidebar-field-title">Theme(s)</h3>
+            <span class="theme-tag">Health</span>
+          </div>
+
         </div>
-      </section>
+      </aside>
 
-      <!-- POPULATION -->
-      <section class="card">
-        <h2>Population coverage</h2>
-        <p>Adults aged 18–100 diagnosed with haematological cancer in the Netherlands since 1989</p>
-      </section>
+    </div>
+  </main>
 
-      <!-- GEOGRAPHICAL -->
-      <section class="card">
-        <h2>Geographical coverage</h2>
-        <p>Netherlands</p>
-      </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
 
-      <!-- TEMPORAL -->
-      <section class="card">
-        <h2>Temporal coverage</h2>
-        <p>Start: January 1, 1989</p>
-        <p>End: -</p>
-      </section>
+    <!-- Footer top bar (mirrors topbar) -->
+    <div class="footer-topbar">
+      <div class="container footer-topbar-inner">
+        <nav class="topbar-nav">
+          <a href="#" class="topbar-link">
+            <span class="topbar-icon">⬡</span> Health-RI
+          </a>
+          <span class="topbar-sep">|</span>
+          <a href="#" class="topbar-link">
+            <span class="topbar-icon">⊞</span> Portal
+          </a>
+          <span class="topbar-sep">|</span>
+          <a href="#" class="topbar-link topbar-link--active">
+            <span class="topbar-icon">🗄</span> Data Catalogue
+          </a>
+        </nav>
+        <div class="topbar-right">
+          <a href="#" class="topbar-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            Health-RI Servicedesk
+          </a>
+          <span class="topbar-sep">|</span>
+          <a href="#" class="topbar-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+            EN <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <!-- PURPOSE -->
-      <section class="card">
-        <h2>Purpose</h2>
-        <ul>
-          <li>Legal Compliance</li>
-          <li>Provide Official Statistics</li>
-          <li>Research and Development</li>
-        </ul>
-      </section>
+    <!-- Footer main -->
+    <div class="footer-main">
+      <div class="container footer-grid">
 
-      <!-- PERSONAL DATA -->
-      <section class="card">
-        <h2>Personal data</h2>
-        <ul>
-          <li>Demographic</li>
-          <li>Gender</li>
-          <li>Health History</li>
-          <li>Health Record</li>
-          <li>Income Bracket</li>
-          <li>Region</li>
-        </ul>
-      </section>
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <div class="logo-dots logo-dots--sm" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="logo-text-wrap">
+              <span class="logo-health logo-health--sm">health <strong>RI</strong></span>
+              <span class="logo-catalogue logo-catalogue--sm">Data Catalogue</span>
+            </div>
+          </a>
+          <p class="footer-desc">The National Health Data Catalogue is influenced by the European Union's NextGenerationEU project and the National Growth Fund.</p>
+          <p class="footer-desc">Health-RI is a Dutch initiative aimed at facilitating and promoting an integrated (data) infrastructure for health data, accessible to researchers, citizens, healthcare providers, and businesses. This infrastructure enables the optimal use of health data, body material and samples, and medical images. It also contributes to a learning healthcare system and accelerates the development of personalized health.</p>
+          <div class="footer-logos">
+            <div class="eu-logo">
+              <svg width="40" height="40" viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#003399" stroke="#FFD700" stroke-width="2"/><text x="30" y="36" text-anchor="middle" fill="#FFD700" font-size="8" font-weight="bold">EU</text></svg>
+              <span>Funded by<br>the European Union<br>NextGenerationEU</span>
+            </div>
+            <div class="ngf-logo">
+              <div class="ngf-box">Nationaal<br>Groeifonds</div>
+            </div>
+          </div>
+        </div>
 
-      <!-- CODING SYSTEM -->
-      <section class="card">
-        <h2>Coding system</h2>
-        <p>International Classification of Diseases for Oncology</p>
-        <a href="#">https://www.wikidata.org/wiki/Q192093</a>
-      </section>
+        <div class="footer-links-col">
+          <nav class="footer-nav">
+            <a href="#">Data Catalogue</a>
+            <a href="#">About the Catalogue</a>
+            <a href="#">Frequently asked questions</a>
+            <a href="#">Dataset basket</a>
+            <a href="#">Health-RI Servicedesk</a>
+          </nav>
+        </div>
 
-      <!-- CODE VALUES -->
-      <section class="card">
-        <h2>Code values</h2>
-        <a href="#">http://id.who.int/icd/entity/944754984</a>
-      </section>
+        <div class="footer-social-col">
+          <a href="#" class="social-link">
+            <span class="social-icon social-icon--mail">✉</span>
+            Newsletter
+          </a>
+          <a href="#" class="social-link">
+            <span class="social-icon social-icon--li">in</span>
+            LinkedIn
+          </a>
+          <a href="#" class="social-link">
+            <span class="social-icon social-icon--yt">▶</span>
+            YouTube
+          </a>
+        </div>
 
-<section class="card">
-  <h2>Variables</h2>
+      </div>
+    </div>
 
-  <div class="tabs">
-    <button class="tab-button active" onclick="openTab(event, 'Alle_hematologische_maligniteit')">Alle hematologische maligniteit</button>
-    <button class="tab-button" onclick="openTab(event, 'NHL')">NHL</button>
-    <button class="tab-button" onclick="openTab(event, 'HL')">HL</button>
-    <button class="tab-button" onclick="openTab(event, 'Cutane_lymfomen')">Cutane lymfomen</button>
-    <button class="tab-button" onclick="openTab(event, 'Plasmaceltumoren')">Plasmaceltumoren</button>
-    <button class="tab-button" onclick="openTab(event, 'AL_amyloidose')">AL amyloidose</button>
-    <button class="tab-button" onclick="openTab(event, 'Histiocytaire_en_dendritische_c')">Histiocytaire en dendritische c</button>
-  </div>
+    <!-- Footer bottom bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2026</span>
+        <span class="footer-sep">|</span>
+        <a href="#">Terms and conditions <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <span class="footer-sep">|</span>
+        <a href="#">Privacy policy <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <span class="footer-sep">|</span>
+        <a href="#">Cookies policy <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <span class="footer-sep">|</span>
+        <a href="#">Data breach <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <span class="footer-sep">|</span>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
 
-  <!-- TEMPLATE FUNCTIE: hergebruik voor alle tabs -->
-  
-  <!-- Alle hematologische maligniteit -->
-  <div id="Alle_hematologische_maligniteit" class="tab-content active">
-    <table>
-      <thead>
-        <tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Geboorteplaats / -land</td><td>Geboorteplaats en/of geboorteland van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Overlijdensdatum</td><td>Datum van overlijden van de patiënt (indien van toepassing).</td><td>date</td></tr>
-        <tr><td>NL</td><td>WHO performance score</td><td>WHO performance score bij diagnose of eerste presentatie.</td><td>integer</td></tr>
-        <tr><td>NL</td><td>Patiëntnummer in de instelling</td><td>Uniek patiëntnummer binnen de instelling.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron waarop de diagnose is gebaseerd.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Topografie (anatomische locatie) van de maligniteit.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Morfologie (histologisch type).</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie of er eerdere maligniteit is.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- NHL -->
-  <div id="NHL" class="tab-content">
-    <table>
-      <thead>
-        <tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr>
-      </thead>
-      <tbody>
-        <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-
-        <!-- NHL specifiek -->
-        <tr><td>NL</td><td>DNA-onderzoek ten behoeve van specifieke tumormarkers</td><td>Indicatie of DNA-onderzoek is verricht.</td><td>boolean</td></tr>
-        <tr><td>NL</td><td>Ann Arbor stadium</td><td>Stadium I–IV.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Aantal extranodale tumorlokalisaties</td><td>Aantal extranodale sites.</td><td>integer</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Herbruikbare tabs (zelfde structuur uit Excel) -->
-  <div id="HL" class="tab-content">
-    <table>
-      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
-      <tbody>
-         <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div id="Cutane_lymfomen" class="tab-content">
-    <table>
-      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
-      <tbody>
-         <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div id="Plasmaceltumoren" class="tab-content">
-    <table>
-     <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
-      <tbody>
-         <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div id="AL_amyloidose" class="tab-content">
-    <table>
-      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
-      <tbody>
-         <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- NIEUWE TAB -->
-   <div id="Histiocytaire_en_dendritische" class="tab-content">
-    <table>
-      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
-      <tbody>
-         <!-- basisset -->
-        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
-        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
-        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-</section>
-
-</div>
-
-<!-- RIGHT COLUMN -->
-<aside class="right">
-
-  <div class="card small">
-
-    <h3>Identifier</h3>
-    <p class="link">http://example.com/catalog/123</p>
-
-    <h3>Access rights</h3>
-    <p>Restricted</p>
-
-    <h3>Contact details</h3>
-    <p>IKNL: info@iknl.nl</p>
-
-    <h3>Dataset languages</h3>
-    <p>English</p>
-
-    <h3>Publication date</h3>
-    <p>January 1, 1989</p>
-
-    <h3>Update frequency</h3>
-    <p>Daily</p>
-
-  </div>
-
-</aside>
-
-</div>
-</div>
-
+  </footer>
 <script>
+function openTab(evt, tabName) {
+  const container = evt.currentTarget.closest('.variables-block');
 
-function openTab(event, tabId) {
+  const tabs = container.querySelectorAll(".tab-content");
+  const buttons = container.querySelectorAll(".tab-button");
 
-  // hide all tab content
-  const tabContents =
-    document.querySelectorAll('.tab-content');
-
-  tabContents.forEach(tab => {
-    tab.classList.remove('active');
+  tabs.forEach(tab => {
+    tab.style.display = "none";
+    tab.classList.remove("active");
   });
 
-  // remove active button
-  const tabButtons =
-    document.querySelectorAll('.tab-button');
+  buttons.forEach(btn => btn.classList.remove("active"));
 
-  tabButtons.forEach(button => {
-    button.classList.remove('active');
-  });
+  const activeTab = container.querySelector("#" + tabName);
+  if (activeTab) {
+    activeTab.style.display = "block";
+    activeTab.classList.add("active");
+  }
 
-  // activate selected tab
-  document.getElementById(tabId)
-    .classList.add('active');
-
-  event.currentTarget
-    .classList.add('active');
+  evt.currentTarget.classList.add("active");
 }
 
+/* initial state */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".tab-content.active").forEach(tab => {
+    tab.style.display = "block";
+  });
+});
 </script>
-  
 </body>
 </html>
