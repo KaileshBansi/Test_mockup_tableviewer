@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dataset Detail</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<!-- TOP NAV -->
+<header class="topbar">
+
+  <div class="topbar-left">
+    <div class="brand">
+      <span class="dot"></span>
+      health RI Data Catalogue
+    </div>
+  </div>
+
+  <nav class="topnav">
+    <a href="#">Data Catalogue</a>
+    <a href="#">About the Catalogue</a>
+    <a href="#">Frequently asked questions</a>
+  </nav>
+
+  <div class="topbar-right">
+    <button class="basket">Dataset basket</button>
+  </div>
+
+</header>
+
+<!-- HERO -->
+<div class="hero">
+
+  <div class="breadcrumb">Home</div>
+
+  <h1>Hematological malignancies</h1>
+
+  <div class="hero-actions">
+
+    <button class="primary">Request dataset</button>
+
+    <button>Add to dataset basket</button>
+
+    <button>View my dataset basket</button>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <!-- TITLE -->
+  <div class="breadcrumb">Home</div>
+  <h1 class="title">Hematological malignancies</h1>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="left">
+
+
+       <!-- KEYWORDS -->
+      <section class="card">
+        <h2>Description</h2>
+
+        <div class="tags">
+          <span class="tag">The data from the hemato-oncology registry of the Netherlands Cancer Registry (NKR) are used to provide insight into the incidence and survival (cancer epidemiology), diagnostic strategies, primary treatment, and the coherence of policy (i.e., the extent to which guidelines are followed) as well as the impact of treatment recommendations for various hematological cancer types.</span>
+        </div>
+        </section>
+ 
+      <!-- KEYWORDS -->
+      <section class="card">
+        <h2>Keywords</h2>
+
+        <div class="tags">
+          <span class="tag">B-cell lymphoma</span>
+          <span class="tag">Follicular lymphoma</span>
+          <span class="tag">Haemato oncology</span>
+          <span class="tag">Leukemia</span>
+          <span class="tag">Multiple myeloma</span>
+          <span class="tag">Myelodysplastic syndromes</span>
+          <span class="tag">Plasma cell tumors</span>
+        </div>
+      </section>
+
+      <!-- POPULATION -->
+      <section class="card">
+        <h2>Population coverage</h2>
+        <p>Adults aged 18–100 diagnosed with haematological cancer in the Netherlands since 1989</p>
+      </section>
+
+      <!-- GEOGRAPHICAL -->
+      <section class="card">
+        <h2>Geographical coverage</h2>
+        <p>Netherlands</p>
+      </section>
+
+      <!-- TEMPORAL -->
+      <section class="card">
+        <h2>Temporal coverage</h2>
+        <p>Start: January 1, 1989</p>
+        <p>End: -</p>
+      </section>
+
+      <!-- PURPOSE -->
+      <section class="card">
+        <h2>Purpose</h2>
+        <ul>
+          <li>Legal Compliance</li>
+          <li>Provide Official Statistics</li>
+          <li>Research and Development</li>
+        </ul>
+      </section>
+
+      <!-- PERSONAL DATA -->
+      <section class="card">
+        <h2>Personal data</h2>
+        <ul>
+          <li>Demographic</li>
+          <li>Gender</li>
+          <li>Health History</li>
+          <li>Health Record</li>
+          <li>Income Bracket</li>
+          <li>Region</li>
+        </ul>
+      </section>
+
+      <!-- CODING SYSTEM -->
+      <section class="card">
+        <h2>Coding system</h2>
+        <p>International Classification of Diseases for Oncology</p>
+        <a href="#">https://www.wikidata.org/wiki/Q192093</a>
+      </section>
+
+      <!-- CODE VALUES -->
+      <section class="card">
+        <h2>Code values</h2>
+        <a href="#">http://id.who.int/icd/entity/944754984</a>
+      </section>
+
+<section class="card">
+  <h2>Variables</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab(event, 'Alle_hematologische_maligniteit')">Alle hematologische maligniteit</button>
+    <button class="tab-button" onclick="openTab(event, 'NHL')">NHL</button>
+    <button class="tab-button" onclick="openTab(event, 'HL')">HL</button>
+    <button class="tab-button" onclick="openTab(event, 'Cutane_lymfomen')">Cutane lymfomen</button>
+    <button class="tab-button" onclick="openTab(event, 'Plasmaceltumoren')">Plasmaceltumoren</button>
+    <button class="tab-button" onclick="openTab(event, 'AL_amyloidose')">AL amyloidose</button>
+    <button class="tab-button" onclick="openTab(event, 'Histiocytaire_en_dendritische_c')">Histiocytaire en dendritische c</button>
+  </div>
+
+  <!-- TEMPLATE FUNCTIE: hergebruik voor alle tabs -->
+  
+  <!-- Alle hematologische maligniteit -->
+  <div id="Alle_hematologische_maligniteit" class="tab-content active">
+    <table>
+      <thead>
+        <tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Geboorteplaats / -land</td><td>Geboorteplaats en/of geboorteland van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Overlijdensdatum</td><td>Datum van overlijden van de patiënt (indien van toepassing).</td><td>date</td></tr>
+        <tr><td>NL</td><td>WHO performance score</td><td>WHO performance score bij diagnose of eerste presentatie.</td><td>integer</td></tr>
+        <tr><td>NL</td><td>Patiëntnummer in de instelling</td><td>Uniek patiëntnummer binnen de instelling.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron waarop de diagnose is gebaseerd.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Topografie (anatomische locatie) van de maligniteit.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Morfologie (histologisch type).</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie of er eerdere maligniteit is.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NHL -->
+  <div id="NHL" class="tab-content">
+    <table>
+      <thead>
+        <tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr>
+      </thead>
+      <tbody>
+        <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+
+        <!-- NHL specifiek -->
+        <tr><td>NL</td><td>DNA-onderzoek ten behoeve van specifieke tumormarkers</td><td>Indicatie of DNA-onderzoek is verricht.</td><td>boolean</td></tr>
+        <tr><td>NL</td><td>Ann Arbor stadium</td><td>Stadium I–IV.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Aantal extranodale tumorlokalisaties</td><td>Aantal extranodale sites.</td><td>integer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Herbruikbare tabs (zelfde structuur uit Excel) -->
+  <div id="HL" class="tab-content">
+    <table>
+      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
+      <tbody>
+         <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="Cutane_lymfomen" class="tab-content">
+    <table>
+      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
+      <tbody>
+         <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="Plasmaceltumoren" class="tab-content">
+    <table>
+     <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
+      <tbody>
+         <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="AL_amyloidose" class="tab-content">
+    <table>
+      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
+      <tbody>
+         <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NIEUWE TAB -->
+   <div id="Histiocytaire_en_dendritische" class="tab-content">
+    <table>
+      <thead><tr><th>Language code</th><th>Name</th><th>Description</th><th>Type</th><th>URI</th></tr></tr></thead>
+      <tbody>
+         <!-- basisset -->
+        <tr><td>NL</td><td>Geboortedatum</td><td>Geboortedatum van de patiënt.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Geslacht</td><td>Geslacht van de patiënt.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Diagnosedatum</td><td>Datum waarop de diagnose is gesteld.</td><td>date</td></tr>
+        <tr><td>NL</td><td>Basis voor diagnose</td><td>Basis/bron van diagnose.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Topografie</td><td>Anatomische locatie.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Morfologie</td><td>Histologisch type.</td><td>string</td></tr>
+        <tr><td>NL</td><td>Maligniteit in de voorgeschiedenis</td><td>Indicatie eerdere maligniteit.</td><td>boolean</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+<aside class="right">
+
+  <div class="card small">
+
+    <h3>Identifier</h3>
+    <p class="link">http://example.com/catalog/123</p>
+
+    <h3>Access rights</h3>
+    <p>Restricted</p>
+
+    <h3>Contact details</h3>
+    <p>IKNL: info@iknl.nl</p>
+
+    <h3>Dataset languages</h3>
+    <p>English</p>
+
+    <h3>Publication date</h3>
+    <p>January 1, 1989</p>
+
+    <h3>Update frequency</h3>
+    <p>Daily</p>
+
+  </div>
+
+</aside>
+
+</div>
+</div>
+
+<script>
+
+function openTab(event, tabId) {
+
+  // hide all tab content
+  const tabContents =
+    document.querySelectorAll('.tab-content');
+
+  tabContents.forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  // remove active button
+  const tabButtons =
+    document.querySelectorAll('.tab-button');
+
+  tabButtons.forEach(button => {
+    button.classList.remove('active');
+  });
+
+  // activate selected tab
+  document.getElementById(tabId)
+    .classList.add('active');
+
+  event.currentTarget
+    .classList.add('active');
+}
+
+</script>
+  
+</body>
+</html>
